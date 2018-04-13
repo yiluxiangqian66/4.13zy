@@ -1,0 +1,189 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  font-size: .32rem;
+}
+
+header {
+  width: 100%;
+  height: .8rem;
+  padding: 0 .16rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header span i.icon {
+  font-size: .26rem;
+  margin-right: .12rem;
+}
+
+header .input {
+  flex: 1;
+  position: relative;
+}
+
+header .input i.icon {
+  position: absolute;
+  left: 50%;
+  top: .14rem;
+  transform: translate3d(-1.2rem, 0, 0);
+}
+
+header .input input {
+  width: 100%;
+  height: .5rem;
+  text-align: center;
+  border-radius: .2rem;
+  border: 0;
+  background: #EFF2F6;
+  outline: none;
+}
+
+header i.icon2 {
+  margin-left: .18rem;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0;
+  height: 100%;
+  border-radius: 0;
+  background: 0;
+  color: #f09;
+  border-bottom: 1px solid #f09;
+}
+
+section {
+  flex: 1;
+  height: 100%;
+  overflow-y: auto;
+}
+
+section .parent {
+  position: relative;
+  padding-top: .5rem;
+}
+
+section .parent .swiper-slide {
+  height: 100%;
+}
+
+section .parent .swiper-slide dl {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  padding: .5rem .2rem;
+}
+
+section .parent .swiper-slide dl dt {
+  width: 2rem;
+  height: 1.5rem;
+  margin-right: .1rem;
+}
+
+section .parent .swiper-slide dl dt img {
+  width: 100%;
+  height: 100%;
+}
+
+section .parent .swiper-slide dl dd {
+  flex: 1;
+}
+
+section .parent .swiper-slide dl dd .tit {
+  font-size: .3rem;
+}
+
+section .parent .swiper-slide dl dd .tit2 {
+  font-size: .28rem;
+  color: #666;
+  line-height: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 .12rem;
+}
+
+section .parent .swiper-slide dl dd .tit2 .bor {
+  color: #f50;
+  width: .9rem;
+  height: .5rem;
+  line-height: .5rem;
+  text-align: center;
+  border: 1px solid #f50;
+}
+
+section .parent .swiper-slide dl dd .pco {
+  color: #f50;
+}
+
+section .parent .swiper-slide dl dd .pco b:nth-of-type(1) {
+  font-size: .34rem;
+  margin-right: .2rem;
+}
+
+section .parent .swiper-slide dl dd .pco span {
+  font-size: .28rem;
+}
+
+section .parent .pag {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  height: .5rem;
+}
+
+section .parent .pag span {
+  flex: 1;
+}
+
+footer {
+  width: 100%;
+  height: 1rem;
+  display: flex;
+  border-top: 1px solid #eee;
+}
+
+footer span {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer span.active a {
+  color: greenyellow;
+}
+
+footer span.active i.icon {
+  color: greenyellow;
+}
+
+footer span i.icon {
+  font-size: .4rem;
+}
+
+footer span a {
+  color: #666;
+  font-size: .28rem;
+}
+/*# sourceMappingURL=style.css.map */
