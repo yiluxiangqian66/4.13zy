@@ -22,148 +22,127 @@ body,
 header {
     width: 100%;
     height: .8rem;
-    padding: 0 .16rem;
+    background: #EB3B47;
     display: flex;
     align-items: center;
-    justify-content: center;
+    padding: 0 .12rem;
     span {
-        i.icon {
-            font-size: .26rem;
+        color: #fff;
+        i.icon3 {
+            margin-left: .12rem;
+        }
+        i.icon4 {
             margin-right: .12rem;
         }
     }
     .input {
         flex: 1;
         position: relative;
-        i.icon {
+        i.icon2 {
             position: absolute;
             left: 50%;
-            top: .14rem;
-            transform: translate3d(-1.2rem, 0, 0);
+            top: .12rem;
+            transform: translate3d(-1.4rem, 0, 0);
         }
         input {
             width: 100%;
             height: .5rem;
-            text-align: center;
-            border-radius: .2rem;
             border: 0;
-            background: #EFF2F6;
-            outline: none;
+            background: #eee;
+            border-radius: .12rem;
+            text-align: center;
         }
-    }
-    i.icon2 {
-        margin-left: .18rem;
     }
 }
 
-.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0;
-    height: 100%;
-    border-radius: 0;
-    background: 0;
-    color: #f09;
-    border-bottom: 1px solid #f09;
+nav {
+    display: flex;
+    align-items: center;
+    height: .8rem;
+    border-bottom: 1px solid #eee;
+    span {
+        flex: 1;
+        color: #333;
+        text-align: center;
+        i.icon2 {
+            color: #999;
+            margin-left: .1rem;
+        }
+    }
 }
 
 section {
     flex: 1;
     height: 100%;
     overflow-y: auto;
-    .parent {
-        // height: 100%;
-        position: relative;
-        padding-top: .5rem;
-        .swiper-slide {
-            height: 100%;
-            dl {
-                width: 100%;
-                height: auto;
-                border-bottom: 1px solid #eee;
-                display: flex;
-                padding: .5rem .2rem;
-                dt {
-                    width: 2rem;
-                    height: 1.5rem;
-                    margin-right: .1rem;
-                    img {
-                        width: 100%;
-                        height: 100%;
-                    }
-                }
-                dd {
-                    flex: 1;
-                    .tit {
-                        font-size: .3rem;
-                    }
-                    .tit2 {
-                        font-size: .28rem;
-                        color: #666;
-                        line-height: 2;
-                        display: flex;
-                        justify-content: space-between;
-                        padding: 0 .12rem;
-                        .bor {
-                            color: #f50;
-                            width: .9rem;
-                            height: .5rem;
-                            line-height: .5rem;
-                            text-align: center;
-                            border: 1px solid #f50;
-                        }
-                    }
-                    .pco {
-                        color: #f50;
-                        b:nth-of-type(1) {
-                            font-size: .34rem;
-                            margin-right: .2rem;
-                        }
-                        span {
-                            font-size: .28rem;
-                        }
-                    }
-                }
-            }
-        }
-        .pag {
-            position: absolute;
-            left: 0;
-            top: 0;
+    .sec {
+        width: 100%;
+        dl {
+            width: 100%;
+            height: auto;
             display: flex;
-            background: #fff;
-            border-bottom: 1px solid #eee;
-            height: .5rem;
-            span {
+            padding: .2rem;
+            dt {
+                // background: red;
+                p {
+                    margin-top: .1rem;
+                    span {
+                        padding: 0 .12rem;
+                        background: #EB3B47;
+                        i.icon {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            img {
+                width: 3.1rem;
+                height: 2.2rem;
+                margin-right: .12rem;
+            }
+            dd {
                 flex: 1;
+                margin-left: .12rem;
+                p {
+                    &.text,
+                    &.texts {
+                        color: #999;
+                        line-height: 2;
+                        font-size: .24rem;
+                    }
+                    font {
+                        color: #999;
+                        font-size: .22rem;
+                    }
+                    &:nth-of-type(5) {
+                        span {
+                            background: #F0F6F9;
+                            color: #B2D0D6;
+                            font-size: .26rem;
+                            padding: .02rem .04rem;
+                        }
+                    }
+                    &:nth-of-type(2) {
+                        line-height: 1.5;
+                        span {
+                            padding: .06rem .2rem;
+                            background: #FCD0CF;
+                            color: #fff;
+                            font-size: .22rem;
+                            margin-left: .2rem;
+                        }
+                        b {
+                            color: #DD2E40;
+                            font-size: .34rem;
+                        }
+                    }
+                }
+                p.tit {
+                    font-size: .36rem;
+                    color: #333;
+                    font-weight: 800;
+                }
             }
-        }
-    }
-}
-
-footer {
-    width: 100%;
-    height: 1rem;
-    display: flex;
-    border-top: 1px solid #eee;
-    span {
-        &.active {
-            a {
-                color: greenyellow;
-            }
-            i.icon {
-                color: greenyellow;
-            }
-        }
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        i.icon {
-            font-size: .4rem;
-        }
-        a {
-            color: #666;
-            font-size: .28rem;
         }
     }
 }

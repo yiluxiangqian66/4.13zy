@@ -22,14 +22,21 @@ body,
 header {
   width: 100%;
   height: .8rem;
-  padding: 0 .16rem;
+  background: #EB3B47;
   display: flex;
   align-items: center;
-  justify-content: center;
+  padding: 0 .12rem;
 }
 
-header span i.icon {
-  font-size: .26rem;
+header span {
+  color: #fff;
+}
+
+header span i.icon3 {
+  margin-left: .12rem;
+}
+
+header span i.icon4 {
   margin-right: .12rem;
 }
 
@@ -38,34 +45,38 @@ header .input {
   position: relative;
 }
 
-header .input i.icon {
+header .input i.icon2 {
   position: absolute;
   left: 50%;
-  top: .14rem;
-  transform: translate3d(-1.2rem, 0, 0);
+  top: .12rem;
+  transform: translate3d(-1.4rem, 0, 0);
 }
 
 header .input input {
   width: 100%;
   height: .5rem;
-  text-align: center;
-  border-radius: .2rem;
   border: 0;
-  background: #EFF2F6;
-  outline: none;
+  background: #eee;
+  border-radius: .12rem;
+  text-align: center;
 }
 
-header i.icon2 {
-  margin-left: .18rem;
+nav {
+  display: flex;
+  align-items: center;
+  height: .8rem;
+  border-bottom: 1px solid #eee;
 }
 
-.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0;
-  height: 100%;
-  border-radius: 0;
-  background: 0;
-  color: #f09;
-  border-bottom: 1px solid #f09;
+nav span {
+  flex: 1;
+  color: #333;
+  text-align: center;
+}
+
+nav span i.icon2 {
+  color: #999;
+  margin-left: .1rem;
 }
 
 section {
@@ -74,116 +85,79 @@ section {
   overflow-y: auto;
 }
 
-section .parent {
-  position: relative;
-  padding-top: .5rem;
+section .sec {
+  width: 100%;
 }
 
-section .parent .swiper-slide {
-  height: 100%;
-}
-
-section .parent .swiper-slide dl {
+section .sec dl {
   width: 100%;
   height: auto;
-  border-bottom: 1px solid #eee;
   display: flex;
-  padding: .5rem .2rem;
+  padding: .2rem;
 }
 
-section .parent .swiper-slide dl dt {
-  width: 2rem;
-  height: 1.5rem;
-  margin-right: .1rem;
+section .sec dl dt p {
+  margin-top: .1rem;
 }
 
-section .parent .swiper-slide dl dt img {
-  width: 100%;
-  height: 100%;
-}
-
-section .parent .swiper-slide dl dd {
-  flex: 1;
-}
-
-section .parent .swiper-slide dl dd .tit {
-  font-size: .3rem;
-}
-
-section .parent .swiper-slide dl dd .tit2 {
-  font-size: .28rem;
-  color: #666;
-  line-height: 2;
-  display: flex;
-  justify-content: space-between;
+section .sec dl dt p span {
   padding: 0 .12rem;
+  background: #EB3B47;
 }
 
-section .parent .swiper-slide dl dd .tit2 .bor {
-  color: #f50;
-  width: .9rem;
-  height: .5rem;
-  line-height: .5rem;
-  text-align: center;
-  border: 1px solid #f50;
+section .sec dl dt p span i.icon {
+  color: #fff;
 }
 
-section .parent .swiper-slide dl dd .pco {
-  color: #f50;
+section .sec dl img {
+  width: 3.1rem;
+  height: 2.2rem;
+  margin-right: .12rem;
 }
 
-section .parent .swiper-slide dl dd .pco b:nth-of-type(1) {
+section .sec dl dd {
+  flex: 1;
+  margin-left: .12rem;
+}
+
+section .sec dl dd p.text, section .sec dl dd p.texts {
+  color: #999;
+  line-height: 2;
+  font-size: .24rem;
+}
+
+section .sec dl dd p font {
+  color: #999;
+  font-size: .22rem;
+}
+
+section .sec dl dd p:nth-of-type(5) span {
+  background: #F0F6F9;
+  color: #B2D0D6;
+  font-size: .26rem;
+  padding: .02rem .04rem;
+}
+
+section .sec dl dd p:nth-of-type(2) {
+  line-height: 1.5;
+}
+
+section .sec dl dd p:nth-of-type(2) span {
+  padding: .06rem .2rem;
+  background: #FCD0CF;
+  color: #fff;
+  font-size: .22rem;
+  margin-left: .2rem;
+}
+
+section .sec dl dd p:nth-of-type(2) b {
+  color: #DD2E40;
   font-size: .34rem;
-  margin-right: .2rem;
 }
 
-section .parent .swiper-slide dl dd .pco span {
-  font-size: .28rem;
-}
-
-section .parent .pag {
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: flex;
-  background: #fff;
-  border-bottom: 1px solid #eee;
-  height: .5rem;
-}
-
-section .parent .pag span {
-  flex: 1;
-}
-
-footer {
-  width: 100%;
-  height: 1rem;
-  display: flex;
-  border-top: 1px solid #eee;
-}
-
-footer span {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-footer span.active a {
-  color: greenyellow;
-}
-
-footer span.active i.icon {
-  color: greenyellow;
-}
-
-footer span i.icon {
-  font-size: .4rem;
-}
-
-footer span a {
-  color: #666;
-  font-size: .28rem;
+section .sec dl dd p.tit {
+  font-size: .36rem;
+  color: #333;
+  font-weight: 800;
 }
 /*# sourceMappingURL=style.css.map */

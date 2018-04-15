@@ -1,0 +1,42 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta http-equiv="X-UA-Compatible" content="ie=edge;chrome=1"><title>Document</title><script>document.documentElement.style.fontSize=window.innerWidth/750*100+"px"</script><link rel="stylesheet" href="fonts2/iconfont.css"><link rel="stylesheet" href="css/style.css"></head><body><div class="wrap"><header><span><i class="icon iconfont icon-shouye"></i> </span><span>上海 <i class="icon4 iconfont icon-triangle-down"></i></span><div class="input"><input type="text" placeholder="输入小区，搜索房源"> <i class="icon2 iconfont icon-fangdajing"></i></div><span><i class="icon3 iconfont icon-geren"></i></span></header><nav><span>位置<i class="icon2 iconfont icon-xiala"></i></span> <span>租金<i class="icon2 iconfont icon-xiala"></i></span> <span>合租<i class="icon2 iconfont icon-xiala"></i></span> <span>更多<i class="icon2 iconfont icon-xiala"></i></span></nav><section><div class="sec"></div></section></div></body><script src="js/jQuery.js"></script><script>$.ajax({
+        url: "/list",
+        type: 'GET',
+        success: function(data) {
+            var arr = JSON.parse(data);
+            gethtml(arr.list);
+        },
+        error: function(error) {
+            console.log(error);
+        }
+    })
+
+    function gethtml(list) {
+        var html = "";
+        $.each(list, function(i, v) {
+            html += ` <dl>
+                <dt>
+                   <img src="${v.img}" alt="">
+                     <p>        
+                      <span><i class="icon iconfont icon-shoucang1"></i></span>
+                      <span><i class="icon iconfont icon-shoucang1"></i></span>
+                      <span><i class="icon iconfont icon-shoucang1"></i></span>
+                      <span><i class="icon iconfont icon-shoucang1"></i></span>
+                      <span><i class="icon iconfont icon-shoucang1"></i></span>
+                   </p>    
+                </dt>
+                <dd>
+                    <p class="tit">${v.tit}</p>
+                    <p><b>￥${v.pro}元</b><span>可月付</span></p>
+                    <p class="text">${v.text}</p>
+                    <p class="texts">${v.texts}</p>
+                    <p>
+                        <span>新上架</span>
+                        <span>独卫</span>
+                        <span>独立厨房</span>
+                        <font>今天发布</font>
+                    </p>
+                </dd>
+            </dl>`
+        })
+        $('.sec').html(html);
+    }</script></html>
